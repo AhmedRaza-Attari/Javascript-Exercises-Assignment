@@ -11,40 +11,97 @@
 <body>
 
     <script>
-        // 10. Write a program to implement checkout process of a shopping cart system for an e - commerce website.Take input from users, the following:
-        // a.Name of item1
-        // b.Name of item2
-        // c.Price of item 1
-        // d.Price of item 2
-        // e.Ordered quantity of item 1
-        // f.Ordered Quantity of item 2
-        // g.Shipping charges
-        // Compute the total cost.If the total cost is above 2000 PKR, offer them 10 % discount & show the receipt in your browser.
-        var item1 = prompt("Name of item1 which you want");
-        var item1price = Number(prompt(`Price of ${item1}`));
-        var quantityofItem1 = Number(prompt(`How many pieces of ${item1} you want`));
-        var item2 = prompt("Name of item2 which you want");
-        var item2price = Number(prompt(`Price of ${item2}`));
-        var quantityofItem2 = Number(prompt(`How many pieces of ${item2} you want`));
-        var shippingCharges = Number(prompt(`Shipping Charges`));
-        var totalPrice = (item1price * quantityofItem1) + (item2price * quantityofItem2) + shippingCharges;
+        // // 1. Write a program that takes input a name from user & greet the user like this:
+        // var name = prompt("What is your name?");
+        // alert(`Hi ${name}`);
 
 
+        // // 2. Write a program to take input a number from user & display it’s multiplication table on your browser. If user does not enter a number, multiplication table of 5 should be displayed by default.
+        // var table = Number(prompt(`Enter any number and see their table`, `${5}`));
+        // document.write(`<h3> Multiplication table of ${table} <h3/>`);
+        // document.write(`<h3> ${table} X 1 = ${table * 1}  <h3/>`);
+        // document.write(`<h3> ${table} X 2 = ${table * 2}  <h3/>`);
+        // document.write(`<h3> ${table} X 3 = ${table * 3}  <h3/>`);
+        // document.write(`<h3> ${table} X 4 = ${table * 4}  <h3/>`);
+        // document.write(`<h3> ${table} X 5 = ${table * 5}  <h3/>`);
+        // document.write(`<h3> ${table} X 6 = ${table * 6}  <h3/>`);
+        // document.write(`<h3> ${table} X 7 = ${table * 7}  <h3/>`);
+        // document.write(`<h3> ${table} X 8 = ${table * 8}  <h3/>`);
+        // document.write(`<h3> ${table} X 9 = ${table * 9}  <h3/>`);
+        // document.write(`<h3> ${table} X 10 = ${table * 10} <h3/>`);
+        // document.write(`<h3> ${table} X 11 = ${table * 11} <h3/>`);
+        // document.write(`<h3> ${table} X 12 = ${table * 12} <h3/>`);
 
-        document.write("<h1> Shopping Cart </h1>");
-        document.write(`<h3> Price of ${item1} is ${item1price} </h3>`);
-        document.write(`<h3> Quantity of ${item1} is ${quantityofItem1} </h3>`);
-        document.write(`<h3> Price of ${item2} is ${item2price} </h3>`);
-        document.write(`<h3> Quantity of ${item2} is ${quantityofItem2} </h3>`);
-        document.write(`<h3> Shipping Charges ${shippingCharges} </h3>`);
+        
+        // // 3. Write a program to take “city” name as input from user. If user enters “Karachi”, welcome the user like this: “Welcome to city of lights”
+        // var cityName = prompt(`Enter city name in lower case`);
+        // if (cityName === 'karachi') {
+        //     alert(`Welcome to city of lights`);
+        // }
 
-        if (totalPrice > 2000) {
-            document.write(`<h3> Total Cost of your order is ${totalPrice} PKR </h3>`);
-            discountedPrice = totalPrice - (totalPrice / 10);
-            document.write(`<h3> Discounted Price is ${discountedPrice} </h3>`)
-        } else {
-            document.write(`<h3> Total Cost of your order is ${totalPrice} PKR </h3>`);
-        }
+
+        // // 4. Write a program to take “gender” as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma’am.
+        // var gender = prompt(`What's your Gender, write here in lower case`);
+        // if (gender === 'male') {
+        //     alert(`Good Morning Sir`);
+        // } else if (gender === 'female') {
+        //     alert(`Good Morning Madam`);
+        // }
+
+
+        // // 5. Write a program to take input color of road traffic signal from the user & show the message according to this table:
+        // var lightcolor = prompt(`Enter any color from Traffic Lights, write in lower case`);
+        // if (lightcolor === 'red') {
+        //     alert(`Vehicles must stop`);
+        // } else if (lightcolor === 'yellow') {
+        //     alert(`Vehicles should get ready to move`);
+        // } else if (lightcolor === 'green') {
+        //     alert(`Vehicles can move now`);
+        // }
+
+
+        // // 6. Write a program to take input max age & current age from user. If the current age is less than or equal to max age, show the message “You are welcome”
+        // var maxAge = Number(prompt("Enter your max age"));
+        // var currentAge = Number(prompt("Enter your current age"));
+        // if (currentAge <= maxAge) {
+        //     alert("You are Welcome");
+        // }
+
+
+        
+
+        // // 10. Write a program to implement checkout process of a shopping cart system for an e - commerce website.Take input from users, the following:
+        // // a.Name of item1
+        // // b.Name of item2
+        // // c.Price of item 1
+        // // d.Price of item 2
+        // // e.Ordered quantity of item 1
+        // // f.Ordered Quantity of item 2
+        // // g.Shipping charges
+        // // Compute the total cost.If the total cost is above 2000 PKR, offer them 10 % discount & show the receipt in your browser.
+        // var item1 = prompt("Name of item1 which you want");
+        // var item1price = Number(prompt(`Price of ${item1}`));
+        // var quantityofItem1 = Number(prompt(`How many pieces of ${item1} you want`));
+        // var item2 = prompt("Name of item2 which you want");
+        // var item2price = Number(prompt(`Price of ${item2}`));
+        // var quantityofItem2 = Number(prompt(`How many pieces of ${item2} you want`));
+        // var shippingCharges = Number(prompt(`Shipping Charges`));
+        // var totalPrice = (item1price * quantityofItem1) + (item2price * quantityofItem2) + shippingCharges;
+
+        // document.write("<h1> Shopping Cart </h1>");
+        // document.write(`<h3> Price of ${item1} is ${item1price} </h3>`);
+        // document.write(`<h3> Quantity of ${item1} is ${quantityofItem1} </h3>`);
+        // document.write(`<h3> Price of ${item2} is ${item2price} </h3>`);
+        // document.write(`<h3> Quantity of ${item2} is ${quantityofItem2} </h3>`);
+        // document.write(`<h3> Shipping Charges ${shippingCharges} </h3>`);
+
+        // if (totalPrice > 2000) {
+        //     document.write(`<h3> Total Cost of your order is ${totalPrice} PKR </h3>`);
+        //     discountedPrice = totalPrice - (totalPrice / 10);
+        //     document.write(`<h3> Discounted Price is ${discountedPrice} </h3>`)
+        // } else {
+        //     document.write(`<h3> Total Cost of your order is ${totalPrice} PKR </h3>`);
+        // }
 
 
     </script>
