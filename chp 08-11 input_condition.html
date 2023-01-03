@@ -26,12 +26,26 @@
         var item2 = prompt("Name of item2 which you want");
         var item2price = Number(prompt(`Price of ${item2}`));
         var quantityofItem2 = Number(prompt(`How many pieces of ${item2} you want`));
+        var shippingCharges = Number(prompt(`Shipping Charges`));
+        var totalPrice = (item1price * quantityofItem1) + (item2price * quantityofItem2) + shippingCharges;
 
 
-        console.log(item1);
-        console.log(item2);
-        console.log(item1price);
-        console.log(item2price);
+
+        document.write("<h1> Shopping Cart </h1>");
+        document.write(`<h3> Price of ${item1} is ${item1price} </h3>`);
+        document.write(`<h3> Quantity of ${item1} is ${quantityofItem1} </h3>`);
+        document.write(`<h3> Price of ${item2} is ${item2price} </h3>`);
+        document.write(`<h3> Quantity of ${item2} is ${quantityofItem2} </h3>`);
+        document.write(`<h3> Shipping Charges ${shippingCharges} </h3>`);
+
+        if (totalPrice > 2000) {
+            document.write(`<h3> Total Cost of your order is ${totalPrice} PKR </h3>`);
+            discountedPrice = totalPrice - (totalPrice / 10);
+            document.write(`<h3> Discounted Price is ${discountedPrice} </h3>`)
+        } else {
+            document.write(`<h3> Total Cost of your order is ${totalPrice} PKR </h3>`);
+        }
+
 
     </script>
 
