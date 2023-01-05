@@ -16,6 +16,7 @@
         // alert(`Hi ${name}`);
 
 
+
         // // 2. Write a program to take input a number from user & display it’s multiplication table on your browser. If user does not number multiplication table of 5 should be displayed by default.
         // var table = Number(prompt(`Enter any number and see their table`, `${5}`));
         // document.write(`<h3> Multiplication table of ${table} <h3/>`);
@@ -33,11 +34,13 @@
         // document.write(`<h3> ${table} X 12 = ${table * 12} <h3/>`);
 
 
+
         // // 3. Write a program to take “city” name as input from user. If user enters “Karachi”, welcome the user like this: “Welcome to city of lights”
         // var cityName = prompt(`Enter city name in lower case`);
         // if (cityName === 'karachi') {
         //     alert(`Welcome to city of lights`);
         // }
+
 
 
         // // 4. Write a program to take “gender” as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma’am.
@@ -47,6 +50,7 @@
         // } else if (gender === 'female') {
         //     alert(`Good Morning Madam`);
         // }
+
 
 
         // // 5. Write a program to take input color of road traffic signal from the user & show the message according to this table:
@@ -60,6 +64,7 @@
         // }
 
 
+
         // // 6. Write a program to take input max age & current age from user. If the current age is less than or equal to max age, show the message “You are welcome”
         // var maxAge = Number(prompt("Enter your max age"));
         // var currentAge = Number(prompt("Enter your current age"));
@@ -68,11 +73,13 @@
         // }
 
 
+
         // // 7. Write a program to take input remaining fuel in car (in litres) from user. If the current fuel is less than 0.25litres, show the message “Please refill the fuel in your car”
         // var remainingFuel = Number(prompt("Enter the remaining fuel in your car in Litres"));
         // if (remainingFuel < 2.5) {
         //     alert("Please refill the fuel in your car");
         // }
+
 
 
         // // 8. Run this script, & check whether alert message would be displayed or not. Record the outputs.
@@ -119,6 +126,7 @@
         // }
 
 
+
         // // 9. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on page. Take percentage & compute grade as per following table:
         // var firstSubject = Number(prompt("Enter marks in HTML"));
         // var secondSubject = Number(prompt("Enter marks in CSS"));
@@ -145,7 +153,8 @@
         //     document.write(`<p> Grade: Fail </p>`);
         //     document.write(`<p> Remarks : Sorry </p>`);
         // }
-        
+
+
 
         // // 10. Write a program to implement checkout process of a shopping cart system for an e - commerce website.Take input from users, the following:
         // // a.Name of item1
@@ -179,6 +188,96 @@
         // } else {
         //     document.write(`<h3> Total Cost of your order is ${totalPrice} PKR </h3>`);
         // }
+
+
+
+        // // 11. Guess game: Store a secret number (ranging from 1 to 10) in a variable. Prompt user to guess the secret number.
+        // // a. If user guesses the same number, show “Bingo! Correct answer”.
+        // // b. If the guessed number +1 is the secret number, show “Close enough to the correct answer”.
+        // var secretNumber = 6;
+        // var userGuess = Number(prompt("Enter any number from 1-10, so I will check it's correct or not"));
+        // if (userGuess === secretNumber) {
+        //     alert("Bingo! Correct Answer");
+        // } else if ((userGuess + 1) === secretNumber) {
+        //     alert("Close enough to the correct answer");
+        // }
+
+
+
+        // // 12. Write a program to check whether the given number is divisible by 3. Show the mess to the user if the number is divisible by 3.
+        // var divisible = Number(prompt("Write any number, and I will tell it's divisible by 3 or not"));
+        // if ((divisible % 3) === 0 ) {
+        //     alert("It's divisible by 3")
+        // }
+
+
+
+        // // 13. Names & Total scores of two teams are taken as input. Write a program that shows which team has won the game or show if there is a tie. (Team A or Team B)
+        // var teamOneName = prompt("Team 1: Enter your team name?")
+        // var teamOneScores = Number(prompt("Team 1: Enter your total scores?"))
+        // var teamTwoName = prompt("Team 2: Enter your team name?")
+        // var teamTwoScores = Number(prompt("Team 2: Enter your total scores?"))
+        // if (teamOneScores > teamTwoScores) {
+        //     alert(`${teamOneName} Win the match`);
+        // } else if (teamOneScores < teamTwoScores) {
+        //     alert(`${teamTwoName} Win the match`);
+        // } else if (teamOneScores === teamTwoScores) {
+        //     alert(`${teamOneName} and ${teamTwoName} Both Win the match `);
+        // }
+
+
+
+        // // 14. Take a string, a number and a Boolean in three variables. Write a program that checks the type of variables & responds accordingly. Like :
+        // var stringValue = "Ahmed Raza Attari";
+        // var numberValue = 12;
+        // var booleanValue = true;
+
+        // alert(stringValue + " is a " + typeof(stringValue));
+        // alert(numberValue + " is a " + typeof(numberValue));
+        // alert(booleanValue + " is a  " + typeof(booleanValue));
+
+
+
+        // // 15. Write a program that checks whether the given input is an even number or an odd number.
+        // var evenOdd = Number(prompt("Enter any number to check whether it's a Even or Odd"));
+        // if (evenOdd % 2 === 0) {
+        //     alert(`${evenOdd} is a Even Number`);
+        // } else {
+        //     alert(`${evenOdd} is a Odd Number`);
+        // }
+
+
+
+        // // 16. Weather in Karachi nowadays is too cool, write a program that takes temperature as input and shows a message based on following criteria
+        // // a. T > 40 then “It is too hot outside.”
+        // // b. T > 30 then “The Weather today is Normal.”
+        // // c. T > 20 then “Today’s Weather is cool.”
+        // // d. T > 10 then “OMG! Today’s weather is so Cool.”
+        // var temInKarachi = Number(prompt("Please tell's us the Today's Temperature"));
+        // if (temInKarachi > 40 && temInKarachi <= 100) {
+        //     alert("It's too hot outside");
+        // } else if (temInKarachi > 30 && temInKarachi <= 40) {
+        //     alert("The Weather today is Normal");
+        // } else if (temInKarachi > 20 && temInKarachi <= 30) {
+        //     alert("Today's Weather is cool");
+        // } else if (temInKarachi > 10) {
+        //     alert("OMG! Today's Weather is so cool");
+        // }
+
+
+
+        // 17. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:
+        // a. First number
+        // b. Second number
+        // c. Operation (+, -, *, /, %)
+        // Compute & show the calculated result to user.
+        alert("Calculator");
+        var firstNumber = Number(prompt("Enter 1st Number"));
+        var secondNumber = Number(prompt("Enter 2nd Number"));
+        var operationSign = Number(prompt("Enter sign of operation, either +, -, X, /, %"));
+        
+
+
 
 
     </script>
