@@ -1,83 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> i. Forloop & String Exercise </title>
 </head>
+
 <body>
 
     <script>
 
-        // // 1) FOR LOOP:
+        // 1) FOR LOOP:
         // ***************
 
-        // // i. Write a program to display the message “Hello World” 5 times in your browser using for loop.
-        // for (var i = 0; i < 5; i++) {
-        //     document.write((i + 1) + " Hello World <br/>");
-        // }
-        // document.write("<br/><br/>");
+        // i. Write a program to display the message “Hello World” 5 times in your browser using for loop.
+        for (var i = 0; i < 5; i++) {
+            document.write((i + 1) + " Hello World <br/>");
+        }
+        document.write("<br/><br/>");
 
 
 
-        // // ii. Write a program to print numeric counting from 1 to 10 using for loop.
-        // for (var counting = 1; counting < 11; counting++) {
-        //     document.write(`Counting: ${counting} <br/>`);
-        // }
-        // document.write("<br/><br/>");
+        // ii. Write a program to print numeric counting from 1 to 10 using for loop.
+        for (var counting = 1; counting < 11; counting++) {
+            document.write(`Counting: ${counting} <br/>`);
+        }
+        document.write("<br/><br/>");
 
 
 
-        // // iii. Write a program to print multiplication table of any number.
-        // var tableNumber = 12;
-        // for (var table = 1; table <= 12; table++) {
-        //     document.write(`${tableNumber} X ${table} = ${tableNumber * table} <br/>`);
-        // }
-        // document.write("<br/><br/>");
+        // iii. Write a program to print multiplication table of any number.
+        var tableNumber = 12;
+        for (var table = 1; table <= 12; table++) {
+            document.write(`${tableNumber} X ${table} = ${tableNumber * table} <br/>`);
+        }
+        document.write("<br/><br/>");
 
 
 
-        // // iv. A = [“Nokia”, “Samsung”, “Apple”, “Sony”, “Huawei”], traverse this array and print each element with “Hello World” before it. Eg; Hello World Nokia, Hello World Samsung, ……..
-        // var brands = ["Nokia", "Samsung", "Apple", "Sony", "Huawei"];
-        // for (var series = 0; series < brands.length; series++) {
-        //     document.write(`Hello World ${brands[series]} <br/>`);
-        // }
-        // document.write("<br/><br/>");
+        // iv. A = [“Nokia”, “Samsung”, “Apple”, “Sony”, “Huawei”], traverse this array and print each element with “Hello World” before it. Eg; Hello World Nokia, Hello World Samsung, ……..
+        var brands = ["Nokia", "Samsung", "Apple", "Sony", "Huawei"];
+        for (var series = 0; series < brands.length; series++) {
+            document.write(`Hello World ${brands[series]} <br/>`);
+        }
+        document.write("<br/><br/>");
 
 
 
-        // // v. Write a program to identify the smallest number in the given array. A = [24, 53, 78, 91, 12], HINT: search google for this.
-        // var smallArray = [24, 53, 78, 91, 12];
-        // var smallestNumber = smallArray[0];
-        // for (var i = 0; i < smallArray.length; i++) {
-        //     if (smallestNumber > smallArray[i]) {
-        //         smallestNumber = smallArray[i];
-        //     } 
-        // }
-        // document.write(`The smallest number is : ${smallestNumber}`);
-        // document.write("<br/><br/>");
+        // v. Write a program to identify the smallest number in the given array. A = [24, 53, 78, 91, 12], HINT: search google for this.
+        var smallArray = [24, 53, 78, 91, 12];
+        var smallestNumber = smallArray[0];
+        for (var i = 0; i < smallArray.length; i++) {
+            if (smallestNumber > smallArray[i]) {
+                smallestNumber = smallArray[i];
+            } 
+        }
+        document.write(`The smallest number is : ${smallestNumber}`);
+        document.write("<br/><br/>");
 
 
 
-        // // vi. Write a program to print multiples of 5 ranging 1 to 100. Like: 5, 10, 15, 20, ….. 95, 100.
-        // var multiplesOfFive = 5;
-        // for (var table = 1; table < 21; table++) {
-        //     document.write(`${multiplesOfFive * table}, `)
-        // }
-        // document.write("<br/><br/>");
+        // vi. Write a program to print multiples of 5 ranging 1 to 100. Like: 5, 10, 15, 20, ….. 95, 100.
+        var multiplesOfFive = 5;
+        for (var table = 1; table < 21; table++) {
+            document.write(`${multiplesOfFive * table}, `)
+        }
+        document.write("<br/><br/>");
 
 
 
-        // // vii. Write a program to identify the largest number in the given array. A = [24, 53, 78, 91, 12], HINT: search google for this
-        // var numberArray = [24, 53, 78, 91, 12];
-        // var largestNumber = numberArray[0];
-        // for (var largestSeries = 0; largestSeries < numberArray.length; largestSeries++) {
-        //     if (largestNumber < numberArray[largestSeries]) {
-        //         largestNumber = numberArray[largestSeries];
-        //     }
-        // }
-        // document.write(`The largest number is : ${largestNumber}`);
+        // vii. Write a program to identify the largest number in the given array. A = [24, 53, 78, 91, 12], HINT: search google for this
+        var numberArray = [24, 53, 78, 91, 12];
+        var largestNumber = numberArray[0];
+        for (var largestSeries = 0; largestSeries < numberArray.length; largestSeries++) {
+            if (largestNumber < numberArray[largestSeries]) {
+                largestNumber = numberArray[largestSeries];
+            }
+        }
+        document.write(`The largest number is : ${largestNumber}`);
+        document.write("<br/><br/>");
+
+
+
+
+        // 1) STRING METHODS:
+        // ******************
+        
+
+
+
+
+        // i. Write a program that takes two user inputs for first and last name using a prompt and merge them in a new variable titled fullName. Greet the user using his full name.
+        var firstName = prompt("Enter your first name");
+        var lastName = prompt("Enter your last name");
+        var fullName = firstName + lastName;
+        document.write(`${firstName} ${lastName}`);
+        document.write("<br/><br/>");
+        
+        
+        
+        // ii. Write a program to find the index of the letter “n” in the word “Pakistani” and display the result in your browser.HINT, use indexOf
+        var countryName = "Pakistani";
+        document.write(`The index of letter 'n' from word "Pakistani" is : ${countryName.indexOf("n")}`);
+        document.write("<br/><br/>");
+        
+        
+        
+        // iii. Write a program to find the last index of the letter “l” in the word “Hello World” and display the result in your browser. Use laseIndexOf
+        var greeting = "Hello World";
+        document.write(`The lastIndexOf of letter "l" from word "Hello World" is : ${greeting.lastIndexOf("l")}`)
+        document.write("<br/><br/>");
+        
+        
+        
+        // iv. Write a program to find the character at the 3rd index in the word “Pakistani” and display the result in your browser.
+        var word = "Pakistani" 
+        document.write(`${word.charAt(2)}`);
+        document.write("<br/><br/>");
+        
+        
+        
+        // v. Write a program that takes user input. Convert and show the input in small letters. Use toLowerCase
+        var userInput = prompt("Enter any thing in UPPER CASE");
+        document.write(`${userInput.toLowerCase()}`);
+        document.write("<br/><br/>");
+        
+        
+        
+        // vi. Write a program to print ASCII code for A to Z and a to z chars using for loop and charCodeAt.
+        
+        // For Upper Case
+        for (var capitalLetters = 65; capitalLetters <= 90; capitalLetters++) {
+            document.write(String.fromCharCode(capitalLetters) + ", ");
+        }
+        document.write("<br/><br/>");
+        
+        // For Lower Case 
+        for (var lowerLetters = 97; lowerLetters <= 122; lowerLetters++) {
+            document.write(String.fromCharCode(lowerLetters) + ", ");
+        }
+        document.write("<br/><br/>");
+
+
+
+        // vii. Write a program to count number of vowels & consonants in given string var str = “Pakistan”
+        var str = "Pakistan";
+        var vowels = 0;
+        for (checking = 0; checking < str.length; checking++) {
+            if (str[checking] === "a" || str[checking] === "e" || str[checking] === "i" || str[checking] === "o" || str[checking] === "u") {
+                vowels++;
+            }
+        }
+
+        var consonants = str.length - vowels;
+        document.write(str + "<br>");
+        document.write(`Consonants : ${consonants} <br>`);
+        document.write(`Vowels : ${vowels}`);
+
+
+
+        
 
 
 
@@ -86,4 +170,5 @@
     </script>
 
 </body>
+
 </html>
