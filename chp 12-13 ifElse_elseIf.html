@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chapter 12-13 If-Else and Else-If Statements </title>
+</head>
+<body>
+
+    <script>
+
+        // Chapter 12 - 13 If-Else and Else-If Statements
+
+
+        // // 1. Write a program to check whether the given input number is divisible by 3 or else show a message “Number is not divisible by 3”.
+        // document.write("1. Write a program to check whether the given input number is divisible by 3 or else show a message “Number is not divisible by 3”. </br></br>");
+
+        // let userInput1 = Number(prompt("Enter any number I will tell you, it is divisible by 3 or not"));
+
+        // if (userInput1 % 3 === 0) {
+        //     document.write(`${userInput1} is divisible by 3 </br>`);
+        // } else {
+        //     document.write(`${userInput1} is not completely divisible by 3 </br>`);
+        // }
+
+        // document.write("</br></br></br>");
+
+
+
+
+        // // 2. Write a program that checks whether the given input is an even number or an odd number.
+        // document.write("2. Write a program that checks whether the given input is an even number or an odd number. </br> </br>");
+
+        // let evenOdd = Number(prompt("Enter any number I will tell you it's Even or Odd"));
+
+        // if (evenOdd % 2 === 0) {
+        //     document.write(`${evenOdd} is an Even Number`);
+        // } else {
+        //     document.write(`${evenOdd} is a Odd Number`);
+        // }
+
+        // document.write("</br></br></br>");
+
+
+
+
+        // // 3. Write an if/else statement with the following condition: If the variable age is greater than 18, output "Old enough", otherwise output "Too young".
+        // document.write("3. Write an if/else statement with the following condition: If the variable age is greater than 18, output 'Old enough', otherwise output 'Too young'. </br></br>");
+
+        // let age3 = Number(prompt("Enter your age"));
+
+        // if (age3 > 18) {
+        //     document.write(`Old Enough </br>`);
+        // } else {
+        //     document.write(`Too Young`);
+        // }
+
+        // document.write("</br></br></br></br>");
+
+
+
+
+        // // 4. Write a program that prompts the user for their name, and then displays a special greeting to that person if their name is the same as yours. If the name entered by the user is anything other than your name, your code should not produce any output.
+        // document.write("4. Write a program that prompts the user for their name, and then displays a special greeting to that person if their name is the same as yours. If the name entered by the user is anything other than your name, your code should not produce any output. </br> </br>")
+
+        // let name4 = prompt("Enter name to check", "Hint: Ahmed Raza Attari");
+
+        // if (name4 === "Ahmed Raza Attari") {
+        //     document.write("Your and my name are same, Nice to meet you.");
+        // }
+
+        // document.write("</br></br></br></br>");
+
+
+
+
+        // // 5. Write a program to check whether the given input number is divisible by 3 or not by using Switch Case statements. Show a message 'Number is not divisible by 3' or 'Number is divisible by 3'. </br> </br>
+        // document.write("5. Write a program to check whether the given input number is divisible by 3 or not by using Switch Case statements. Show a message 'Number is not divisible by 3' or 'Number is divisible by 3'. </br> </br>");
+
+        // let userInput5 = Number(prompt("Enter any number, then I will tell you it is divisible by 3 or not"));
+
+        // switch (true) {
+        //     case userInput5 % 3 === 0:
+        //         document.write(`${userInput5} is divisible by 3`);
+        //         break;
+        //     default:
+        //         document.write(`${userInput5} is not divisible by 3`);
+        // }
+
+        // document.write("</br></br></br></br>");
+
+
+
+
+        // // 6. Write a program that takes a character(number or string) in a variable & checks whether the given input is a number uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122)
+        // document.write("6. Write a program that takes a character(number or string) in a variable & checks whether the given input is a number uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122) </br> </br>");
+
+        // let input5 = prompt("Enter any Number or String, then I will tell you it's a Number or String");
+
+        // if (input5 >= "A" && input5 <= "Z") {
+        //     document.write(`${input5} is an Upper Case`);
+        // } else if (input5 >= "a" && input5 <= "z") {
+        //     document.write(`${input5} is a Lower Case`);
+        // } else if (!isNaN(input5)) {
+        //     document.write(`${input5} is a Number`);
+        // }
+
+        // document.write("</br></br></br></br>");
+
+
+
+
+        // // 7. Write a program to create a calculator for +, -, *, /, % using switch case statements. (number1, number2 operator will be input)"
+        // document.write("7. Write a program to create a calculator for +, -, *, /, % using switch case statements. (number1, number2 operator will be input) </br> </br>");
+        // alert("Calculator")
+
+        // let value7a = Number(prompt("Enter first value"));
+        // let value7b = Number(prompt("Enter second value"));
+        // let sign7 = prompt("Enter which operator, +, -, x, /, %");
+
+        // switch (sign7) {
+        //     case "+":
+        //         document.write(`${value7a} + ${value7b} = ${value7a + value7b} </br>`);
+        //         break;
+        //     case "-":
+        //         document.write(`${value7a} - ${value7b} = ${value7a - value7b} </br>`);
+        //         break;
+        //     case "*":
+        //         document.write(`${value7a} X ${value7b} = ${value7a * value7b} </br>`);
+        //         break;
+        //     case "/":
+        //         document.write(`${value7a} / ${value7b} = ${value7a / value7b} </br>`);
+        //         break;
+        //     case "%":
+        //         document.write(`${value7a} % ${value7b} = ${value7a % value7b} </br>`);
+        //         break;
+        //     default:
+        //         alert("Please enter valid operator");
+        // }
+
+        // document.write("</br></br></br></br>");
+        
+        
+        
+        
+        // // 8. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements
+        // document.write("8. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements </br> </br>");
+        
+        // let time8 = prompt("What time is it?", "Please type in 24 hours format like: 1300");
+        // if (time8 >= 0000 && time8 < 1200) {
+        //     document.write("Good Morning </br>");
+        // } else if (time8 >= 1200 && time8 < 1700) {
+        //     document.write("Good Afternoon </br>");
+        // } else if (time8 >= 1700 && time8 < 2100) {
+        //     document.write("Good Evening </br>");
+        // } else if (time8 >= 2100 && time8 <= 2359) {
+        //     document.write("Good Night </br>");
+        // }
+        
+        // // document.write("</br></br></br></br>");
+
+
+
+
+        // 9. Write a program that takes a calendar year in YYYY format in a variable. Check & notify the user whether it is a leap year or not.
+        document.write("9. Write a program that takes a calendar year in YYYY format in a variable. Check & notify the user whether it is a leap year or not.")
+
+         
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+        
+
+        
+
+
+
+
+
+ 
+    </script>
+    
+</body>
+</html>
